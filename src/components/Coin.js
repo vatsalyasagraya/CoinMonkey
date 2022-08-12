@@ -9,7 +9,7 @@ function Coin({ name, icon, price, symbol,pricechange }) {
       <div className="name">{name}</div> 
       <div className="symbol">{symbol}</div> 
       <div className={`pricechange ${pricechange<0?'red':'green'}` }>{pricechange}</div>
-      <div className="price">${price}</div>
+      <div className="price">$ {price}</div>
     </div>
   );
 }
